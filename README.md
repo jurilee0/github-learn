@@ -1,6 +1,9 @@
 ## 프로젝트 개요
+> https://jurilee0.github.io/github-learn/src/index.html
+> 
 github-learn 저장소는 협업을 위해 알아야 할 git과 github 기능을 기재하고 
 실습하기 위한 목적으로 만들어졌습니다.
+
 
 ## 사용 도구
 > Window 운영체제 기반으로 에디터는 VS code를 사용합니다. 또 모든 과정은 커멘드라인(bash)로 진행됩니다. 
