@@ -25,7 +25,7 @@ github-learn 저장소는 협업을 위해 알아야 할 git과 github 기능을
 
 ## 참조
 - [GitHub Docs](https://docs.github.com/ko)
-- [Wiki]() - 24.10 추가 예정
+- [Wiki](https://github.com/jurilee0/github-learn/issues/10)
     - 32bit/64bit 구분 방법
     - VS code 기본 터미널 변경
     - VS code 항상 관리자 권한으로 실행
