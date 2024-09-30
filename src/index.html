@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guide</title>
+    <style>
+        .wrap{max-width:1280px;margin:0 auto;padding:0 20px}
+        h1{text-align:center}
+        section{padding:20px;border:1px solid #666;border-radius:20px}
+        section+section{margin-top:20px}
+        p{line-height:1.8}
+        li{margin-bottom:10px}
+        li:last-child{margin-bottom:0}
+        code{padding:4px;background:#eee;color:orangered}
+    </style>
 </head>
 <body>
     <div class="wrap">
@@ -18,47 +28,36 @@
             </p>
         </section>
         <section>
-            <h2>용어 정리</h3>
+            <h2>기본 개념과 용어</h3>
             <ul>
-                <li>repository: 저장소</li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>repository: 저장소. remote/local</li>
+                <li>working directory: 작업 공간(untracked)</li>
+                <li>staging area: 추적중인 상태</li>
+                <li>branch: 분기점. 가상의 나뭇가지</li>
+                <li>HEAD: 브랜치의 마지막 커밋을 바라보는 포인터</li>
+                <li>ignore: 추적 관리하지 않을 파일을 정의</li>
+                <li>conflict: 같은 라인의 변경이 겹처 중첩된 경우 충돌</li>
             </ul>
         </section>
         <section>
-            <h2>기본 명령어</h2>
+            <h2>명령어</h2>
             <ul>
-                <li><code>git init</code>:저장소 초기화</li>
-                <li><code>git clone</code>:</li>
-                <li><code>git log</code>:</li>
-                <li><code>git status</code>:</li>
-                <li><code>git diff</code>:</li>
-                <li><code>git add</code></li>
-                <li><code>git commit</code></li>
-                <li><code>git fetch</code></li>
-                <li><code>git pull</code></li>
-                <li><code>git push</code></li>
-                <li><code>git branch</code></li>
-                <li><code>git checkout</code></li>
-                <li><code>git remote</code></li>
-                <li><code>git reset</code></li>
-                <li><code>git revert</code></li>
-                <li><code>git rebase</code></li>
-            </ul>
-        </section>
-        <section>
-            <h2>더 알아보기</h2>
-            <ul>
-                <li>게임으로 배우는 Git</li>
-                <li>Slack에서 저장소 구독하기</li>
-                <li></li>
+                <li><code>git init</code>:저장소 초기화. 추적 시작</li>
+                <li><code>git clone 저장소주소</code>: 기존에 존재하는 저장소 복제</li>
+                <li><code>git log</code>:변동 내역 조회</li>
+                <li><code>git status</code>:파일들의 상태조회</li>
+                <li><code>git diff</code>: 특정 기준을 기준으로 내용 비교</li>
+                <li><code>git add</code>: 대상의 변경 사항을 추적관리 시작(스테이징)</li>
+                <li><code>git commit</code>: 파일의 유의미한 변경점을 기준으로 스냅샷</li>
+                <li><code>git fetch</code>: 변동 내역을 가져오나 로컬에 반영되지 않음. 병합 전 확인 용도로 사용</li>
+                <li><code>git pull</code>: 변동 내역 받아오기</li>
+                <li><code>git push</code>: 변동 내역을 원격 저장소로 보내기</li>
+                <li><code>git branch</code>: 저장소에 존재하는 분기 목록 조회. 또한 생성/병합/삭제/변경 가능</li>
+                <li><code>git checkout 저장소명</code>: 브랜치로 이동. switch</li>
+                <li><code>git remote</code>: 원격 저장소 조회. 단축 이름으로 추가 가능</li>
+                <li><code>git reset</code>: 변경 사항 되돌리기. 옵션에 따라 실행 범위 다름</li>
+                <li><code>git revert</code>: 변동 사항을 되돌리나 버전은 유지(commit 남음)</li>
+                <li><code>git rebase</code>: 내가 작업중인 브랜치를 main 마지막 commit을 기준으로 한다는 개념</li>
             </ul>
         </section>
     </div>
