@@ -1,5 +1,5 @@
 ---
-name: Task 실습
+name: Performing a task
 about: 배정된 내용을 참고하여 과제를 수행합니다.
 title: ''
 labels: ''
